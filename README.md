@@ -1,41 +1,58 @@
+<img src='https://shop.tamburino.it/wp-content/uploads/2017/10/ricerca_film_001.png' width='100' height='100'>
+    
+    
+# Asci Project 1 : Movie Search Web Application
+A Movie Search Web Application with different filters such as genre , type of shows and language.
 
-# Asci Project Movie API APP
-We are make the Movie api app .
-Our application gives the better user interference . 
+## Team members
+ - Swapnil Gite https://github.com/SwapnilGite
+ - Mohan Mali https://github.com/MVMali
 
+## Color Reference
+   colorhunt.co
 
-
-## Team Members
-
-
-
- 1]@swapnil Gite https://github.com/SwapnilGite
- 2]@Mohan Mali https://github.com/MVMali
- 
-## API Reference
-
-#### Get all items
+## Technologies used
+- Language => HTML , CSS , Javascript
+- Code editors => Sublime Text , Visual Studio Code
+- Chrome DevTools
+- API used => tmdb api
+#### Get movies by genre
 
 ```http
-  GET /api/items
+  GET /genre/list
 ```
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `Genre` | `string` |Required-Api_key|
 
-#### Get item
+
+#### Get trending movies/tv by week
 
 ```http
-  GET /api/items/${id}
+  GET /trending/Movie/week
+  GET /trending/tv/week
+  
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
+| `time_window`      | `string` |Required-Api_key  |
 
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
-
-  
+## Other References
+    https://www.w3schools.com/
+    https://developer.mozilla.org/
+ 
+## Features
+   - Search for a movie by typing name in the Search Box.
+   - See trending movies/tv shows by clicking on specific trending buttons.
+   - Hover/click on movie poster to read overview of the movie.
+   - Ratings of movie/tv shows are differentiated using proper colors.
+   
+## Screenshots
+- Home Page(top)
+![App Screenshot](ss1.png)
+- Home Page(bottom)
+![App Screenshot](ss2.png)
+- Search results
+![App Screenshot](ss3.png)
